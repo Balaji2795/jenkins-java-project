@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fafafa;
+        }
+        header {
+            background-color: #fc8019;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .restaurant-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .restaurant-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .restaurant-card:hover {
+            transform: scale(1.02);
+        }
+        .restaurant-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .restaurant-card .info {
+            padding: 15px;
+        }
+        .restaurant-card h3 {
+            margin: 0 0 5px 0;
+        }
+        .restaurant-card p {
+            margin: 0;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Swiggy Clone</h1>
+</header>
+
+<nav>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Restaurants</a>
+        <a href="#">Offers</a>
+    </div>
+    <div>
+        <a href="#">Login</a>
+        <a href="#">Cart</a>
+    </div>
+</nav>
+
+<section class="restaurant-list">
+    <div class="restaurant-card">
+        <img src="https://source.unsplash.com/250x150/?pizza" alt="Pizza Place">
+        <div class="info">
+            <h3>Pizza Heaven</h3>
+            <p>Italian • 4.5 ⭐ • 30-40 mins</p>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <img src="https://source.unsplash.com/250x150/?burger" alt="Burger Place">
+        <div class="info">
+            <h3>Burger Hub</h3>
+            <p>Fast Food • 4.2 ⭐ • 20-30 mins</p>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <img src="https://source.unsplash.com/250x150/?sushi" alt="Sushi Place">
+        <div class="info">
+            <h3>Sushi World</h3>
+            <p>Japanese • 4.8 ⭐ • 40-50 mins</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
